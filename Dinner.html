@@ -16,7 +16,7 @@
     <div class="head">
         <i ><img  src="fire_icon.png" style="height:8%; width: 4%; position: relative; top: 1%; left: 6%;"/></i>
         <h1>Dinner</h1>
-        <button>Login</button>
+        <button><a href="#Login">Login</a></button>
         <div id="menu" onclick="show()">
             <i ></i>
             <i ></i>
@@ -45,8 +45,53 @@
 
     <div>
     <a href="#popup1">สร้างบัญชี </a>
+
+     <!-- ล็อคอินจ้าาา -->
     </div>
-    
+    <div id="Login" class="overlay">
+	    <div class="popup">
+            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+        <h2>ใส่หมายเลขโทรศัทพ์ของคุณ</h2>
+        
+		<a class="close" href="#">&times;</a>
+		<div class="content" >
+
+            <form role="form" id="myForm" >
+               
+                <select name="prefix" id="prefix" class="form-control" style="float:left">
+                    <option value="0">66+</option>
+                    <option value="1">+1</option>
+                    <option value="2">+82</option>
+                    <option value="3">+81</option>
+                    <option value="4">+45</option>
+                    <option value="5">+90</option></select>
+                    <input type="tel" name="Loginnum" id="Loginnum"  required />
+                    
+                    <br>
+                    <h5>เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ อาจมีค่าบริการส่งข้อความและข้อมูล ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
+               </form>
+               <a class="button2" href="#Login2" >ต่อไป</a>
+		     </div>
+	     </div>
+    </div>
+
+
+    <!-- ล็อคอินจ้าาา -->
+    <div id="Login2" class="overlay">
+	    <div class="popup">
+            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+        <h2>ใส่อีเมล์ของคุณ</h2>
+        
+		<a class="close" href="#">&times;</a>
+		<div class="content" >
+
+            <input type="email" name="email" id="email" placeholder="กรอกอีเมล์" required /> <br>
+               <a class="button2" href="#" >Login</a>
+		     </div>
+	     </div>
+    </div>
+
+
    <!-- ใส่เบอร์จ้าาา -->
     <div id="popup1" class="overlay">
 	    <div class="popup">
@@ -242,6 +287,8 @@
 	    <div class="popup">
             <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
         <h2>เข้าถึงรูป ฝากแบคทำ</h2>
+        <a class="close" href="#">&times;</a>
+		<div class="content" > 
                   
                     <a class="button2" href="#popup10" >ต่อไป</a>
 		     </div>
