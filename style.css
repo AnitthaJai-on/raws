@@ -1,179 +1,166 @@
 body{
-    margin:0;
-
+  margin:0;
+  /*background-color: bisque;*/
+}
+.ice{
+  background-image: url("https://get.pxhere.com/photo/restaurant-love-meal-romance-romantic-wedding-eat-candlestick-interior-design-ceremony-glasses-bright-lovers-pair-banquet-chandelier-mood-candlelight-for-two-valentine's-day-table-decoration-cloth-napkins-wedding-reception-dinner-for-two-fine-food-function-hall-606895.jpg");
+  height: 120%;
+  width: 100%;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  
 }
 .ice1{
-    
-    background-image: linear-gradient(#FF3399, #FF7F50);
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -10;
-    animation: op 1.3s;
-
-
+  background-image: linear-gradient(#FF3399, #FF7F50);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+  animation: op 1.3s;
 }
-
-
 .ice2{
-    
-    background-color: #fff;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    z-index: -9;
-    animation: op2 1.3s ease-in-out;
-
-
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -9;
+  animation: op2 1.3s ease-in-out;
 }
 .icon{
-      animation: icon_ani 1.3s;
-      z-index: -10;
-      display: block;
-      position: relative;
-     margin-left: auto;
-     margin-right: auto;
-     top: 50%;
-     
-
+  animation: icon_ani 1.3s;
+  z-index: -10;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
 }
 .head{
-    background-image: url("https://www.bing.com/th/id/ABTFA3BE27BF92E72F1EF3BF174E3048105FF7EEF8D0E3D83D81188CB344B057CC8?qlt=90&pid=InlineBlock");
-    /*background-color: bisque;*/
-    width: 100%;
-    height: 6em;
-    z-index: 5;
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
+  width: 100%;
+  height: 6em;
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 .head h1, .head .fa-glass-cheers, .head button, .head #menu{
-    color:white;
-    display: inline-block;
-    position: absolute;
+  color:white;
+  display: inline-block;
+  position: absolute;
 }
 .head h1{
-    font-size:50px;
-    left: 2.8em;
-    margin: 0.3em;
+  font-size:50px;
+  left: 2.8em;
+  margin: 0.3em;
 }
 .head .fa-glass-cheers,#menu{
-    font-size:55px;
-    top: 0.3em;
+  font-size:55px;
+  top: 0.3em;
 }
 .head button{
-    color:brown;
-    font-size:25px;
-    height: 50px;
-    width: 100px;
-    top: 0.8em;
-    right: 4.5em;
+  color:brown;
+  font-size:25px;
+  height: 50px;
+  width: 100px;
+  top: 0.8em;
+  right: 4.5em;
 }
 .head .fa-glass-cheers{
-    color: rgb(255, 189, 238);
-    left: 1.2em;
+  color: rgb(255, 189, 238);
+  left: 1.2em;
 }
 #menu{
-    right: 0.5em;
+  right: 0.5em;
 }
 #menu .fa-times, #menu .fa-bars{
-    display: block;
-    position:absolute;
-    right: 0;
-}
-#menu:hover, .show:hover{
-    background-color: burlywood;
+  display: block;
+  position:absolute;
+  right: 0;
 }
 #detail{
-    background-color: cadetblue;
-    width: 100%;
-    height: 20em;
-    z-index: 4;
-    position: fixed;
-    top: 6em;
-    right: 0;
+  background-color: cadetblue;
+  width: 100%;
+  height: 20em;
+  z-index: 4;
+  position: fixed;
+  top: 6em;
+  right: 0;
 }
 /**/
 #menu.show .fa-times, #detail.show{
-    opacity: 1;
+  opacity: 1;
 }
 #menu.show .fa-bars, #detail, #menu .fa-times{
-    opacity: 0;
+  opacity: 0;
 }
 /**/
 .popup {
-    margin: 70px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    width: 30%;
-    position: relative;
-    transition: all 5s ease-in-out;
-    
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
   }
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+  }
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
   
-  .popup h2 {
-    margin-top: 0;
-    color: #333;
-    font-family: Tahoma, Arial, sans-serif;
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
   }
-  .popup .close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    transition: all 200ms;
-    font-size: 30px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
+  .popup{
+    width: 70%; 
   }
-  .popup .close:hover {
-    color: #06D85F;
-  }
-  .popup .content {
-    max-height: 30%;
-    overflow: auto;
-  }
-  
-  @media screen and (max-width: 700px){
-    .box{
-      width: 70%;
-    }
-    .popup{
-      width: 70%;
-      
-    }
-  }
-
-
-
+}
 
 @keyframes icon_ani {
-    0% {
-      -webkit-transform: scale(1, 1);
-              transform: scale(1, 1);
-              opacity: 1;
-              z-index: 100;
-    }
-    25% {
-        -webkit-transform: scale(1.2, 1.2);
-                transform: scale(1.2, 1.2);
-                opacity: 1;
-                z-index: 100;
-      }
-    50% {
-        -webkit-transform: scale(1, 1);
-                transform: scale(1, 1);
-                opacity: 1;
-                z-index: 100;
-      }
-    100% {
-        opacity: 0;
-         z-index: -10;
-    }
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    z-index: 100;
   }
+  25% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+    z-index: 100;
+  }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
 
   @keyframes op {
     0% {
