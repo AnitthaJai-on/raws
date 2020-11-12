@@ -16,7 +16,6 @@
         <i class="fas fa-glass-cheers"></i>
         <h1>Dinner</h1>
         <button>Login</button>
-        
         <div id="menu" onclick="show()">
             <i class="fas fa-bars show"></i>
             <i class="fas fa-times show"></i>
@@ -24,7 +23,6 @@
         <div id="detail">
             <h1>ข้อมูลต่างๆ ใส่ตรงนี้</h1>
         </div>
-        
     </div>
     <h1  style="z-index: 10;
         text-align: center;
@@ -42,17 +40,21 @@
       margin-left: auto;
       margin-right: auto;
       font-size: 20px;
-      top: 40%;" ><a href="#popup1">สร้างบัญชี </a></button>
+      top: 40%;" >
 
-      <div id="popup1" class="overlay">
-	<div class="popup">
-		<h2>ใส่หมายเลขโทรศัทพ์ของคุณ/h2>
+    <div>
+    <a class="button" href="#popup1">สร้างบัญชี </a>
+    </div>
+
+    <div id="popup1" class="overlay">
+	    <div class="popup">
+		<h2>ใส่หมายเลขโทรศัทพ์ของคุณ</h2>
 		<a class="close" href="#">&times;</a>
 		<div class="content">
 			Thank to pop me out of that button, but now i'm done so you can close this window.
 		     </div>
 	     </div>
-      </div>
+    </div>
         
     <script>
         function show(){
