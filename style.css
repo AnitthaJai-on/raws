@@ -80,10 +80,10 @@ body{
   display: block;
   position:absolute;
   right: 0;
-}
+}/*
 #menu:hover, .show:hover{
   background-color: burlywood;
-}
+}*/
 #detail{
   background-color: cadetblue;
   width: 100%;
