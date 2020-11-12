@@ -35,25 +35,6 @@ body{
   margin-left: auto;
   margin-right: auto;
   top: 50%;   
-  
-}
-.icon2{
-  display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-     
-  
-}
-
-.form-control{
-  left: 20%;
-  width: 50px;
-  height: 25px;
-  display: block;
-  position: relative;
-
-  
 }
 .head{
   /*background-color: bisque;*/
@@ -141,14 +122,13 @@ body, .button:after {
   position: relative;
   border-radius: 3px;
   text-decoration: none;
- background-color: #FF3399;
+  padding: .5em;
+  margin: .5em;
   font-size: 2em;
   font-weight: bold;
   transition: all .5s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-  
 }
 .button:hover {
   text-shadow: 0px 0px 0px rgba(255, 255, 255, .75);
@@ -209,7 +189,6 @@ body, .button:after {
   background: #fff;
   border-radius: 5px;
   width: 30%;
-  top: 30%;
   position: relative;
   transition: all 5s ease-in-out;  
 }
@@ -235,169 +214,16 @@ body, .button:after {
   max-height: 30%;
   overflow: auto;
 }
-
-
-.popup2 {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  top: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;  
+  
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+    text-align: center;
+  }
+  .popup{
+    width: 70%;  
+  }
 }
-.popup2 h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup2 .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup2 .close:hover {
-  color: #06D85F;
-}
-.popup2 .content {
-  max-height: 30%;
-  overflow: auto;
-}
-
-
-.popup3 {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  top: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;  
-}
-.popup3 h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup3 .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup3 .close:hover {
-  color: #06D85F;
-}
-.popup3 .content {
-  max-height: 30%;
-  overflow: auto;
-}
-
-
-.pin-wrapper{
-  display:block;
-  justify-content:center;
-  align-items:center;
-
-}
-
-
-input[type="radio"] {
-  display: none;
-}
-input[type="radio"] + label,
-select {
-  display: inline-block;
-  width: 50%;
-  text-align: center;
-  float: left;
-  border-radius: 0;
-}
-input[type="radio"] + label:first-of-type {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-input[type="radio"] + label:last-of-type {
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-input[type="radio"] + label i {
-  padding-right: 0.4em;
-}
-input[type="radio"]:checked + label,
-input:checked + label:before,
-select:focus,
-select:active {
-  background-color: #f0a500;
-  color: #fff;
-  border-color: #bd8200;
-}
-
-.input-group {
-  margin-bottom: 1em;
-  zoom: 1;
-}
-.input-group:before,
-.input-group:after {
-  content: "";
-  display: table;
-}
-.input-group:after {
-  clear: both;
-}
-.input-group-icon {
-  position: relative;
-}
-.input-group-icon input {
-  padding-left: 4.4em;
-}
-.input-group-icon .input-icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3.4em;
-  height: 3.4em;
-  line-height: 3.4em;
-  text-align: center;
-  pointer-events: none;
-}
-.input-group-icon .input-icon:after {
-  position: absolute;
-  top: 0.6em;
-  bottom: 0.6em;
-  left: 3.4em;
-  display: block;
-  border-right: 1px solid #e5e5e5;
-  content: "";
-  -webkit-transition: 0.35s ease-in-out;
-  -moz-transition: 0.35s ease-in-out;
-  -o-transition: 0.35s ease-in-out;
-  transition: 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-.input-group-icon .input-icon i {
-  -webkit-transition: 0.35s ease-in-out;
-  -moz-transition: 0.35s ease-in-out;
-  -o-transition: 0.35s ease-in-out;
-  transition: 0.35s ease-in-out;
-  transition: all 0.35s ease-in-out;
-}
-
-
-
-
-
 
 @keyframes icon_ani {
   0% {
