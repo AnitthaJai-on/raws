@@ -13,8 +13,6 @@ h1{
 
 }
 
-
-
 .ice{
   background-image: url("img/bgg.jpg");
   height: 120%;
@@ -45,19 +43,13 @@ h1{
   animation: icon_ani 1.3s;
   z-index: -10;
   display: block;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  top: 50%;   
-  
+  margin: 10em auto;/*ในมือถือใช้margin: 50% auto;*/
 }
 .icon2{
   display: block;
   position: relative;
   margin-left: auto;
-  margin-right: auto;
-     
-  
+  margin-right: auto; 
 }
 
 .form-control{
@@ -66,8 +58,6 @@ h1{
   height: 25px;
   display: block;
   position: relative;
-
-  
 }
 .head{
   /*background-color: bisque;*/
@@ -199,8 +189,6 @@ body, .button:after {
   border-radius: 5px;
   transition: all .5s;
 }
-
-
 
 
 .overlay {
