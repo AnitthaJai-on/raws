@@ -114,7 +114,7 @@ h1{
   position: fixed;
   top: 6em;
   right: 0;
-}
+}.in_detail{margin-left: 100px;}
 #top{
   z-index: 1;
   background-color: tan;

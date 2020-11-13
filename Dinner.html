@@ -23,6 +23,7 @@
       height: 5%;
       cursor: pointer;
     }
+
     .bb :hover {
       background-image: linear-gradient(to right, #FF7F50, #FF3399);
     }
@@ -47,26 +48,26 @@
     right: 10%;
     margin-left: auto;
     margin-right: auto;
-    position: absolute;"class="bb">
-      <a href="#popup1"style="
+    position: absolute;" class="bb">
+      <a href="#popup1" style="
         text-decoration: none;
         color: #fff;
         font-size: 20px;
         height: auto;
-         "
-        class="bb" >Login</a></button>
+         " class="bb">Login</a></button>
 
-        
+
     <div id="menu" onclick="show()">
       <img class="icon_menu_1" src="img/menu.png" />
       <img class="icon_menu_2" src="img/close.png" />
     </div>
-    
-    <div id="detail">
-      <h1>ข้อมูลต่างๆ ใส่ตรงนี้</h1>
-    </div>
+
+
   </div>
-  <h1 style="z-index: 1;
+  <div id="detail">
+    <div class="in_detail"><h1>ข้อมูลต่างๆ ใส่ตรงนี้</h1></div>
+  </div>
+  <h1 style="z-index: 10;
         text-align: center;
         display: block;
        position: relative;
@@ -79,7 +80,7 @@
   <button style="width:10%;height: 10%;
       background: none;
       border: none;
-      z-index: 1;
+      z-index: 10;
        display: block;
       position: relative;
       margin-left: auto;
@@ -94,8 +95,7 @@
         color: #fff;
         font-size: 20px;
         height: auto;
-        position: absolute;left: 0;right: 0; "
-        class="bb">สร้างบัญชี</a>
+        position: absolute;left: 0;right: 0; " class="bb">สร้างบัญชี</a>
 
     </div>
 
@@ -121,7 +121,8 @@
             <input type="tel" name="Loginnum" id="Loginnum" required />
 
             <br>
-            <h5 style="color: black;">เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ อาจมีค่าบริการส่งข้อความและข้อมูล
+            <h5 style="color: black;">เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ
+              อาจมีค่าบริการส่งข้อความและข้อมูล
               ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
           </form>
           <a class="button2" href="#Login2">ต่อไป</a>
@@ -168,7 +169,8 @@
             <input type="tel" name="num" id="num" required />
 
             <br>
-            <h5 style="color: black;">เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ อาจมีค่าบริการส่งข้อความและข้อมูล
+            <h5 style="color: black;">เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ
+              อาจมีค่าบริการส่งข้อความและข้อมูล
               ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
           </form>
           <a class="button2" href="#popup2">ต่อไป</a>
