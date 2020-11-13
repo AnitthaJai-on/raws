@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Dinner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+</head>
+
+<body>
+    <div class="ice1" >
+        <img class="icon" src="fire_icon.png" style="height:10%; width: 5%;"/>
+    </div>
+    <div class="ice2"> </div>
+    <div class="ice"> </div>
+    <div class="head">
+        <i class="fas fa-glass-cheers"></i>
+        <h1>Dinner</h1>
+
+        <a href="#popup1"><button>Log in</button></a>
+        <div id="menu" onclick="show()">
+            <i class="fas fa-bars show"></i>
+            <i class="fas fa-times show"></i>
+        </div>
+        <div id="detail">
+            <h1>ข้อมูลต่างๆ ใส่ตรงนี้</h1>
+        </div>
+    </div>
+    <h1 style="z-index: 10;
+        text-align: center;
+        display: block;
+       position: relative;
+       margin-left: auto;
+       margin-right: auto;
+       color: #fff;
+       font-size: 16vh;
+       top: 40%;"> ปัดขวา </h1> 
+
+      <button style="z-index: 10;
+       display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 20px;
+      top: 40%;" >
+
+
+    <div class="ctn">
+    <a href="#popup1" class="button b-red">สร้างบัญชี</a>
+    </div>
+
+  
+
+    <div id="popup1" class="overlay">
+	    <div class="popup">
+		<h2>ใส่หมายเลขโทรศัทพ์ของคุณ</h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Thank to pop me out of that button, but now i'm done so you can close this window.
+		     </div>
+	     </div>
+    </div>
+        
+    <script>
+        function show(){
+            document.getElementById("menu").classList.toggle("show");
+            document.getElementById("detail").classList.toggle("show");
+        }
+    </script>
+</body>
+
+</html>
