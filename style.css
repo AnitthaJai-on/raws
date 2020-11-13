@@ -76,7 +76,7 @@ h1{
   right: 0;
 }
 
-.head h1, .head .icon_manu,.head #menu{
+.head h1, .head .icon_manu,.head #menu,.icon_menu2{
   display: inline-block;
   position: absolute;
 }
@@ -85,22 +85,12 @@ h1{
   left: 2.8em;
   margin: 0.3em;
 }
-.head button{
-  display: inline-block;
-  position: absolute;
-  color:pink;
-  font-size:25px;
-  height: 50px;
-  width: 100px;
-  top: 0.8em;
-  right: 4.5em;
-}
-.head .icon_menu,#menu .icon_menu_1, #menu .icon_menu_2 {
+.head .icon_menu,#menu .icon_menu_1, #menu .icon_menu_2 ,.icon_menu2{
   position: absolute;
   top: 0.6em;
   height: 4em;
 }
-.head .icon_menu{
+.head .icon_menu, .icon_menu2{
   left: 5em;
 }
 #menu{
@@ -114,14 +104,30 @@ h1{
 #menu:hover, .show:hover{
   background-color: burlywood;
 }*/
+
+.icon_menu,.icon_menu2 ,#menu,.icon_menu1,.icon_menu2{z-index: 100;}
 #detail{
-  background-color: cadetblue;
+  background-color:tan;
   width: 100%;
   height: 20em;
   z-index: 100;
   position: fixed;
   top: 6em;
   right: 0;
+}
+#top{
+  z-index: 1;
+  background-color: tan;
+  width: 100%;
+  height: 20%;
+  z-index: 100;
+  position: fixed;
+  right: 0;
+  visibility: hidden;
+} .icon_menu{z-index: -1;}
+#top.show,#top.show .icon_menu2{
+  z-index: -1;
+  visibility: initial;
 }
 /**/
 #menu.show .icon_menu_2, #detail.show{
