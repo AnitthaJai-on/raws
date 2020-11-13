@@ -41,9 +41,14 @@ h1{
 }
 .icon{
   animation: icon_ani 1.3s;
-  z-index: -10;
-  display: block;
-  margin: 10em auto;/*ในมือถือใช้margin: 50% auto;*/
+  height:10%; 
+  width: 5%;
+      z-index: -10;
+      display: block;
+      position: relative;
+     margin-left: auto;
+     margin-right: auto;
+     top: 50%;
 }
 .icon2{
   display: block;
