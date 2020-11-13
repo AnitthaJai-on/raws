@@ -1,56 +1,53 @@
 <html>
-<head>
-    <title>Dinner</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
 
-    <style>
-      .bb{
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  background-image: linear-gradient(to right,#FF3399, #FF7F50);
-  border-radius: 30px;
-  width: 150px;
-  height: 5%;
-  cursor: pointer;
-  
-  
-}
-.bb :hover{
-  background-image: linear-gradient(to right,#FF7F50, #FF3399);
-  
-}
-    </style>
+<head>
+  <title>Dinner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/fire_icon2.png" type="image/gif" sizes="16x16">
+  <style>
+    .bb {
+      border: none;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      background-image: linear-gradient(to right, #FF3399, #FF7F50);
+      border-radius: 30px;
+      width: 150px;
+      height: 5%;
+      cursor: pointer;
+    }
+    .bb :hover {
+      background-image: linear-gradient(to right, #FF7F50, #FF3399);
+    }
+  </style>
 
 </head>
 
 <body>
-    <div class="ice1" >
-        <img class="icon" src="fire_icon.png" style="height:10%; width: 5%;"/>
+  <div class="ice1">
+    <img class="icon" src="img/fire_icon.png" /> </div>
+  <div class="ice2"> </div>
+  <div class="ice"> </div>
+  <div class="head">
+    <img class="icon_menu" src="img/fire_icon.png" />
+    <h1>Dinner</h1>
+    <button><a href="#Login">Login</a></button>
+    <div id="menu" onclick="show()">
+      <img class="icon_menu_1" src="img/menu.png" />
+      <img class="icon_menu_2" src="img/close.png" />
     </div>
-    <div class="ice2"> </div>
-    <div class="ice"> </div>
-    <div class="head">
-        <i ><img  src="fire_icon.png" style="height:8%; width: 4%; position: relative; top: 1%; left: 6%;"/></i>
-        <h1>Dinner</h1>
-        <button><a href="#Login">Login</a></button>
-        <div id="menu" onclick="show()">
-            <i ></i>
-            <i ></i>
-        </div>
-        <div id="detail">
-            <h1>ข้อมูลต่างๆ ใส่ตรงนี้</h1>
-        </div>
+    <div id="detail">
+      <h1>ข้อมูลต่างๆ ใส่ตรงนี้</h1>
     </div>
-    <h1 style="z-index: 10;
+  </div>
+  <h1 style="z-index: 10;
         text-align: center;
         display: block;
        position: relative;
@@ -58,9 +55,9 @@
        margin-right: auto;
        color: #fff;
        font-size: 16vh;
-       top: 40%;"> ปัดขวา </h1> 
+       top: 40%;"> ปัดขวา </h1>
 
-      <button style="width:10%;height: 10%;
+  <button style="width:10%;height: 10%;
       background: none;
       border: none;
       z-index: 10;
@@ -70,459 +67,460 @@
        margin-right: auto;
        top: 30%;
 
-     " class="bb"> 
+     " class="bb">
 
     <div class="ctn">
-    <a href="#popup1" style="text-decoration: none; color: #fff; font-size: 20px; position: relative; " class="bb">สร้างบัญชี</a>
-    
+      <a href="#popup1" style="text-decoration: none; color: #fff; font-size: 20px;height: auto; position: relative; "
+        class="bb">สร้างบัญชี</a>
+
     </div>
-     
+
 
     <div id="Login" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ใส่หมายเลขโทรศัทพ์ของคุณ</h2>
-        
-		<a class="close" href="#">&times;</a>
-		<div class="content" >
 
-            <form role="form" id="myForm" >
-               
-                <select name="prefix" id="prefix" class="form-control" style="float:left">
-                    <option value="0">66+</option>
-                    <option value="1">+1</option>
-                    <option value="2">+82</option>
-                    <option value="3">+81</option>
-                    <option value="4">+45</option>
-                    <option value="5">+90</option></select>
-                    <input type="tel" name="Loginnum" id="Loginnum"  required />
-                    
-                    <br>
-                    <h5>เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ อาจมีค่าบริการส่งข้อความและข้อมูล ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
-               </form>
-               <a class="button2" href="#Login2" >ต่อไป</a>
-		     </div>
-	     </div>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+
+          <form role="form" id="myForm">
+
+            <select name="prefix" id="prefix" class="form-control" style="float:left">
+              <option value="0">66+</option>
+              <option value="1">+1</option>
+              <option value="2">+82</option>
+              <option value="3">+81</option>
+              <option value="4">+45</option>
+              <option value="5">+90</option>
+            </select>
+            <input type="tel" name="Loginnum" id="Loginnum" required />
+
+            <br>
+            <h5>เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ อาจมีค่าบริการส่งข้อความและข้อมูล
+              ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
+          </form>
+          <a class="button2" href="#Login2">ต่อไป</a>
+        </div>
+      </div>
     </div>
 
 
     <!-- ล็อคอินจ้าาา -->
     <div id="Login2" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ใส่อีเมล์ของคุณ</h2>
-        
-		<a class="close" href="#">&times;</a>
-		<div class="content" >
 
-            <input type="email" name="email" id="email" placeholder="กรอกอีเมล์" required /> <br>
-               <a class="button2" href="#" >Login</a>
-		     </div>
-	     </div>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+
+          <input type="email" name="email" id="email" placeholder="กรอกอีเมล์" required /> <br>
+          <a class="button2" href="#">Login</a>
+        </div>
+      </div>
     </div>
 
 
-   <!-- ใส่เบอร์จ้าาา -->
+    <!-- ใส่เบอร์จ้าาา -->
     <div id="popup1" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ใส่หมายเลขโทรศัทพ์ของคุณ</h2>
-        
-		<a class="close" href="#">&times;</a>
-		<div class="content" >
 
-            <form role="form" id="myForm" >
-               
-                <select name="prefix" id="prefix" class="form-control" style="float:left">
-                    <option value="0">66+</option>
-                    <option value="1">+1</option>
-                    <option value="2">+82</option>
-                    <option value="3">+81</option>
-                    <option value="4">+45</option>
-                    <option value="5">+90</option></select>
-                    <input type="tel" name="num" id="num"  required />
-                    
-                    <br>
-                    <h5>เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ อาจมีค่าบริการส่งข้อความและข้อมูล ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
-               </form>
-               <a class="button2" href="#popup2" >ต่อไป</a>
-		     </div>
-	     </div>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+
+          <form role="form" id="myForm">
+
+            <select name="prefix" id="prefix" class="form-control" style="float:left">
+              <option value="0">66+</option>
+              <option value="1">+1</option>
+              <option value="2">+82</option>
+              <option value="3">+81</option>
+              <option value="4">+45</option>
+              <option value="5">+90</option>
+            </select>
+            <input type="tel" name="num" id="num" required />
+
+            <br>
+            <h5>เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ อาจมีค่าบริการส่งข้อความและข้อมูล
+              ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
+          </form>
+          <a class="button2" href="#popup2">ต่อไป</a>
+        </div>
+      </div>
     </div>
 
     <!-- ใส่ pin จ้าาา -->
     <div id="popup2" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ใส่รหัสของคุณ</h2>
-        
-		<a class="close" href="#">&times;</a>
-		<div class="content" > 
-                <div class="pin-wrapper">
-                    <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
-                    height: 44px;
-                    border: 1px solid #FF3399;
-                    border-radius: 6px;
-                    outline: none;
-                    margin: 1px;
-                    text-align:center;
-                    margin:0 5px;
-                    background:#FF7F50;
-                    font-size:20px;">
-                    <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
-                    height: 44px;
-                    border: 1px solid #FF3399;
-                    border-radius: 6px;
-                    outline: none;
-                    margin: 1px;
-                    text-align:center;
-                    margin:0 5px;
-                    background:#FF7F50;
-                    font-size:20px;">
-                    <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
-                    height: 44px;
-                    border: 1px solid #FF3399;
-                    border-radius: 6px;
-                    outline: none;
-                    margin: 1px;
-                    text-align:center;
-                    margin:0 5px;
-                    background:#FF7F50;
-                    font-size:20px;">
-                    <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
-                    height: 44px;
-                    border: 1px solid #FF3399;
-                    border-radius: 6px;
-                    outline: none;
-                    margin: 1px;
-                    text-align:center;
-                    margin:0 5px;
-                    background:#FF7F50;
-                    font-size:20px;">
-                    <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
-                    height: 44px;
-                    border: 1px solid #FF3399;
-                    border-radius: 6px;
-                    outline: none;
-                    margin: 1px;
-                    text-align:center;
-                    margin:0 5px;
-                    background:#FF7F50;
-                    font-size:20px;">
-                  </div> <br>
-                    <a class="button2" href="#popup3"  >ต่อไป</a>
-               
 
-		     </div>
-	     </div>
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <div class="pin-wrapper">
+            <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
+                    height: 44px;
+                    border: 1px solid #FF3399;
+                    border-radius: 6px;
+                    outline: none;
+                    margin: 1px;
+                    text-align:center;
+                    margin:0 5px;
+                    background:#FF7F50;
+                    font-size:20px;">
+            <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
+                    height: 44px;
+                    border: 1px solid #FF3399;
+                    border-radius: 6px;
+                    outline: none;
+                    margin: 1px;
+                    text-align:center;
+                    margin:0 5px;
+                    background:#FF7F50;
+                    font-size:20px;">
+            <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
+                    height: 44px;
+                    border: 1px solid #FF3399;
+                    border-radius: 6px;
+                    outline: none;
+                    margin: 1px;
+                    text-align:center;
+                    margin:0 5px;
+                    background:#FF7F50;
+                    font-size:20px;">
+            <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
+                    height: 44px;
+                    border: 1px solid #FF3399;
+                    border-radius: 6px;
+                    outline: none;
+                    margin: 1px;
+                    text-align:center;
+                    margin:0 5px;
+                    background:#FF7F50;
+                    font-size:20px;">
+            <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
+                    height: 44px;
+                    border: 1px solid #FF3399;
+                    border-radius: 6px;
+                    outline: none;
+                    margin: 1px;
+                    text-align:center;
+                    margin:0 5px;
+                    background:#FF7F50;
+                    font-size:20px;">
+          </div> <br>
+          <a class="button2" href="#popup3">ต่อไป</a>
+
+
+        </div>
+      </div>
     </div>
-        
+
 
     <!-- ใส่ email จ้าาาา -->
     <div id="popup3" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>อีเมล์ของคุณคือ?</h2>
-        
-		<a class="close" href="#">&times;</a>
-		<div class="content" > 
-            <input type="email" name="email" id="email" placeholder="กรอกอีเมล์" required /> <br><br>
-                    
-                    <a class="button2" href="#popup4"  >ต่อไป</a>
-		     </div>
-	     </div>
+
+        <a class="close" href="#">&times;</a>
+        <div class="content">
+          <input type="email" name="email" id="email" placeholder="กรอกอีเมล์" required /> <br><br>
+
+          <a class="button2" href="#popup4">ต่อไป</a>
+        </div>
+      </div>
     </div>
 
 
     <!-- เงื่อนไขจ้าาาา -->
     <div id="popup4" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ขอต้อนรับสู่ Dinner บลาๆ</h2>
         <a class="close" href="#">&times;</a>
-		<div class="content" > 
-		<h3>เงื่อนไขบลาๆๆๆๆๆๆ</h3>
-                    
-                    <a class="button2" href="#popup5"  >รับทราบ</a>
-		     </div>
-	     </div>
+        <div class="content">
+          <h3>เงื่อนไขบลาๆๆๆๆๆๆ</h3>
+
+          <a class="button2" href="#popup5">รับทราบ</a>
+        </div>
+      </div>
     </div>
 
-       <!-- ชื่อจ้าาาาาาาา -->
+    <!-- ชื่อจ้าาาาาาาา -->
     <div id="popup5" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ชื่อของฉันคือ</h2>
         <a class="close" href="#">&times;</a>
-		<div class="content" > 
-        <input type="text" name="name" id="name" placeholder="ชื่อจริง" required />
-		<h5>นี้คือสิ่งที่จะปรากฎบน Dinner</h5>
-                    
-                    <a class="button2" href="#popup6"  >ต่อไป</a>
-		     </div>
-	     </div>
+        <div class="content">
+          <input type="text" name="name" id="name" placeholder="ชื่อจริง" required />
+          <h5>นี้คือสิ่งที่จะปรากฎบน Dinner</h5>
+
+          <a class="button2" href="#popup6">ต่อไป</a>
+        </div>
+      </div>
     </div>
 
     <!-- ใส่วันเกิด วันเกิดจ้า-->
     <div id="popup6" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>วันเกิดของฉันคือ</h2>
         <a class="close" href="#">&times;</a>
-		<div class="content" > 
-        <input type="date" id="dob" placeholder="1972-11-12"/>
-		<h5>ผู้ใช้คนอื่นสามารถมองเห็นอายุคุณได้</h5>
-                    
-                    <a class="button2" href="#popup7"  >ต่อไป</a>
-		     </div>
-	     </div>
+        <div class="content">
+          <input type="date" id="dob" placeholder="1972-11-12" />
+          <h5>ผู้ใช้คนอื่นสามารถมองเห็นอายุคุณได้</h5>
+
+          <a class="button2" href="#popup7">ต่อไป</a>
+        </div>
+      </div>
     </div>
 
 
-   <!-- ใส่เพศจ้า -->
+    <!-- ใส่เพศจ้า -->
     <div id="popup7" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ฉันเป็น</h2>
         <a class="close" href="#">&times;</a>
-		<div class="content" > 
-        <canter><div class="input-group">
-          <input type="radio" name="gender" value="male" id="gender-male"/>
-          <label for="gender-male">Male</label>
-          <input type="radio" name="gender" value="female" id="gender-female"/>
-          <label for="gender-female">Female</label>
-        </div></canter>                 
-                    <a class="button2" href="#popup8" >ต่อไป</a>
-		     </div>
-	     </div>
+        <div class="content">
+          <canter>
+            <div class="input-group">
+              <input type="radio" name="gender" value="male" id="gender-male" />
+              <label for="gender-male">Male</label>
+              <input type="radio" name="gender" value="female" id="gender-female" />
+              <label for="gender-female">Female</label>
+            </div>
+          </canter>
+          <a class="button2" href="#popup8">ต่อไป</a>
+        </div>
+      </div>
     </div>
 
     <!-- ใส่สถานศึกษา แม่งเอาไปทำไรวะ -->
     <div id="popup8" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>สถานศึกษาของฉัน</h2>
         <a class="close" href="#">&times;</a>
-		<div class="content" > 
-            <input type="text" name="school" id="school" placeholder="ชื่อสถานศึกษา" required />   <br>            
-                    <a class="button2" href="#popup9" >ต่อไป</a>
-		     </div>
-	     </div>
+        <div class="content">
+          <input type="text" name="school" id="school" placeholder="ชื่อสถานศึกษา" required /> <br>
+          <a class="button2" href="#popup9">ต่อไป</a>
+        </div>
+      </div>
     </div>
 
 
 
     <!-- ใส่รูป -->
     <div id="popup9" class="overlay">
-	    <div class="popup">
-            <img class="icon2" src="fire_icon2.png" style="height:5%; width: 10%;"/><br>
+      <div class="popup">
+        <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>เข้าถึงรูป ฝากแบคทำ</h2>
         <a class="close" href="#">&times;</a>
-		<div class="content" > 
-                  
-                    <a class="button2" href="#popup10" >ต่อไป</a>
-		     </div>
-	     </div>
+        <div class="content">
+
+          <a class="button2" href="#popup10">ต่อไป</a>
+        </div>
+      </div>
     </div>
 
 
 
-
-
-
-
-
-
     <script>
-        function show(){
-            document.getElementById("menu").classList.toggle("show");
-            document.getElementById("detail").classList.toggle("show");
-        }
+      function show() {
+        document.getElementById("menu").classList.toggle("show");
+        document.getElementById("detail").classList.toggle("show");
+      }
 
-        (function($) {
-  //Declare our function
-  $.fn.validatePin = function(options) {
-    var defaults = {
-      //Default Settings
-      numericKeyboardOnMobile: false,
-      blurOnSuccess: false,
+      (function ($) {
+        //Declare our function
+        $.fn.validatePin = function (options) {
+          var defaults = {
+            //Default Settings
+            numericKeyboardOnMobile: false,
+            blurOnSuccess: false,
 
-      //Declaring our callback functions
-      onSuccess: function() {},
-      onFailure: function() {}
-    };
+            //Declaring our callback functions
+            onSuccess: function () { },
+            onFailure: function () { }
+          };
 
-    var settings = $.extend({}, defaults, options);
+          var settings = $.extend({}, defaults, options);
 
-    //Cache the DOM into a jquery object so that repetitive scanning of DOM won't be necessary
-    var $wrapper = $(this),
-      $el = $wrapper.find('[data-role="pin"]'),
-      $elCount = $wrapper.find('[data-role="pin"]').length;
-    pin = "";
+          //Cache the DOM into a jquery object so that repetitive scanning of DOM won't be necessary
+          var $wrapper = $(this),
+            $el = $wrapper.find('[data-role="pin"]'),
+            $elCount = $wrapper.find('[data-role="pin"]').length;
+          pin = "";
 
-    $el.each(function() {
-      pin += ".";
-    });
+          $el.each(function () {
+            pin += ".";
+          });
 
-    //Event Initializations
-    bindEvents();
+          //Event Initializations
+          bindEvents();
 
-    //Function Declarations
-    function bindEvents() {
-      $($el).on("focus", function() {
-        selectText(this);
+          //Function Declarations
+          function bindEvents() {
+            $($el).on("focus", function () {
+              selectText(this);
+            });
+
+            if (checkForMobileDevices()) {
+              $($el).on("keyup", function (e) {
+                var $that = this;
+                validateUserInput(e, $that, "keypress");
+              });
+            } else {
+              $($el).on("keypress", function (e) {
+                var $that = this;
+                setTimeout(function () {
+                  validateUserInput(e, $that, "keypress");
+                }, 0);
+              });
+            }
+            $($el).on("keydown", function (e) {
+              var $that = this;
+              setTimeout(function () {
+                validateUserInput(e, $that, "keydown");
+              }, 0);
+            });
+          }
+
+          //Select the text in an input field
+          function selectText(obj) {
+            var value = $(obj).val();
+            if (!checkForMobileDevices() && $.trim(value) != "") {
+              $(obj).select();
+            }
+          }
+
+          //Validate User Input
+          function validateUserInput(e, obj, event) {
+            var keycode = e.charCode || e.keyCode || e.which;
+            var prevInput = $(obj).prev('[data-role="pin"]'),
+              nextInput = $(obj).next('[data-role="pin"]'),
+              index = $(obj).index(),
+              value = $(obj).val(),
+              empty;
+
+            if (event == "keydown") {
+              //Case - User Hits Left Arrow
+              if (keycode === 37) {
+                $(prevInput).focus();
+                selectText(prevInput);
+              } else if (keycode === 39) {
+                //Case - User Hits Right Arrow
+                $(nextInput).focus();
+                selectText(nextInput);
+              }
+
+              if ($.trim(value) == "") {
+                if (keycode === 8) {
+                  $(prevInput).focus();
+                  settings.onFailure.call(this);
+                }
+              } else {
+                return false;
+              }
+            }
+
+            if (event == "keypress") {
+              if (keycode == 0) {
+                return false;
+              }
+
+              //Case - User Enters an alphabet or a special character
+              if (
+                (keycode >= 65 && keycode <= 90) ||
+                (keycode >= 186 && keycode <= 222)
+              ) {
+                e.preventDefault();
+              }
+
+              //Case - User enters a number from the main keypad or the numpad
+              if (
+                (keycode >= 48 && keycode <= 57) ||
+                (keycode >= 96 && keycode <= 105)
+              ) {
+                pin = $.trim(pin.replace(/\s/g, ""));
+                pin = pin.split("");
+                pin[index] = value;
+                pin = pin.join("");
+
+                $(nextInput).focus();
+
+                if (!checkForMobileDevices()) {
+                  setTimeout(function () {
+                    $(obj).val("•");
+                  }, 200);
+                } else {
+                  $(obj).val("•");
+                }
+              }
+
+              var empty = $($el).filter(function () {
+                return this.value === "";
+              });
+
+              if (empty.length) {
+                settings.onFailure.call(this);
+              } else {
+                settings.onSuccess.call(this);
+                //Check if the user wants to move the focus out of the inputs on success
+                if (settings.blurOnSuccess) {
+                  $($el).blur();
+                }
+              }
+            }
+
+            //Check if default settings have been overrided by the user
+
+            //Prompts a numberic keyboard on mobile
+          }
+
+          function checkForMobileDevices() {
+            if (
+              /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+                navigator.userAgent
+              )
+            ) {
+              return true;
+            } else {
+              return false;
+            }
+          }
+
+          if (settings.numericKeyboardOnMobile) {
+            if (checkForMobileDevices()) {
+              $el.prop("type", "tel");
+            }
+          }
+        };
+      })(jQuery);
+
+      $(document).ready(function () {
+        $(".pin-wrapper").validatePin({
+          numericKeyboardOnMobile: true,
+          blurOnSuccess: true,
+          onSuccess: function () {
+            $(".pin").html(pin);
+          },
+          onFailure: function () {
+            $(".pin").html("");
+          }
+        });
       });
 
-      if (checkForMobileDevices()) {
-        $($el).on("keyup", function(e) {
-          var $that = this;
-          validateUserInput(e, $that, "keypress");
-        });
-      } else {
-        $($el).on("keypress", function(e) {
-          var $that = this;
-          setTimeout(function() {
-            validateUserInput(e, $that, "keypress");
-          }, 0);
-        });
-      }
-      $($el).on("keydown", function(e) {
-        var $that = this;
-        setTimeout(function() {
-          validateUserInput(e, $that, "keydown");
-        }, 0);
-      });
-    }
-
-    //Select the text in an input field
-    function selectText(obj) {
-      var value = $(obj).val();
-      if (!checkForMobileDevices() && $.trim(value) != "") {
-        $(obj).select();
-      }
-    }
-
-    //Validate User Input
-    function validateUserInput(e, obj, event) {
-      var keycode = e.charCode || e.keyCode || e.which;
-      var prevInput = $(obj).prev('[data-role="pin"]'),
-        nextInput = $(obj).next('[data-role="pin"]'),
-        index = $(obj).index(),
-        value = $(obj).val(),
-        empty;
-
-      if (event == "keydown") {
-        //Case - User Hits Left Arrow
-        if (keycode === 37) {
-          $(prevInput).focus();
-          selectText(prevInput);
-        } else if (keycode === 39) {
-          //Case - User Hits Right Arrow
-          $(nextInput).focus();
-          selectText(nextInput);
-        }
-
-        if ($.trim(value) == "") {
-          if (keycode === 8) {
-            $(prevInput).focus();
-            settings.onFailure.call(this);
-          }
-        } else {
-          return false;
-        }
-      }
-
-      if (event == "keypress") {
-        if (keycode == 0) {
-          return false;
-        }
-
-        //Case - User Enters an alphabet or a special character
-        if (
-          (keycode >= 65 && keycode <= 90) ||
-          (keycode >= 186 && keycode <= 222)
-        ) {
-          e.preventDefault();
-        }
-
-        //Case - User enters a number from the main keypad or the numpad
-        if (
-          (keycode >= 48 && keycode <= 57) ||
-          (keycode >= 96 && keycode <= 105)
-        ) {
-          pin = $.trim(pin.replace(/\s/g, ""));
-          pin = pin.split("");
-          pin[index] = value;
-          pin = pin.join("");
-
-          $(nextInput).focus();
-
-          if (!checkForMobileDevices()) {
-            setTimeout(function() {
-              $(obj).val("•");
-            }, 200);
-          } else {
-            $(obj).val("•");
-          }
-        }
-
-        var empty = $($el).filter(function() {
-          return this.value === "";
-        });
-
-        if (empty.length) {
-          settings.onFailure.call(this);
-        } else {
-          settings.onSuccess.call(this);
-          //Check if the user wants to move the focus out of the inputs on success
-          if (settings.blurOnSuccess) {
-            $($el).blur();
-          }
-        }
-      }
-
-      //Check if default settings have been overrided by the user
-
-      //Prompts a numberic keyboard on mobile
-    }
-
-    function checkForMobileDevices() {
-      if (
-        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-          navigator.userAgent
-        )
-      ) {
-        return true;
-      } else {
-        return false;
-      }
-    }
-
-     if (settings.numericKeyboardOnMobile) {
-       if (checkForMobileDevices()) {
-         $el.prop("type", "tel");
-       }
-      }
-    };
-  })(jQuery);
-
- $(document).ready(function() {
-   $(".pin-wrapper").validatePin({
-     numericKeyboardOnMobile: true,
-     blurOnSuccess: true,
-     onSuccess: function() {
-       $(".pin").html(pin);
-     },
-     onFailure: function() {
-       $(".pin").html("");
-     }
-   });
- });
 
 
 
-        
-        </script>
+    </script>
     </script>
 </body>
 

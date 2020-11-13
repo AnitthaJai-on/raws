@@ -16,7 +16,7 @@ h1{
 
 
 .ice{
-  background-image: url("bgg.jpg");
+  background-image: url("img/bgg.jpg");
   height: 120%;
   width: 100%;
   background-size: cover;
@@ -80,8 +80,8 @@ h1{
   top: 0;
   right: 0;
 }
-.head h1, .head .fa-glass-cheers,.head #menu{
-  color:white;
+
+.head h1, .head .icon_manu,.head #menu{
   display: inline-block;
   position: absolute;
 }
@@ -89,10 +89,6 @@ h1{
   font-size:50px;
   left: 2.8em;
   margin: 0.3em;
-}
-.head .fa-glass-cheers,#menu{
-  font-size:55px;
-  top: 0.3em;
 }
 .head button{
   display: inline-block;
@@ -104,17 +100,21 @@ h1{
   top: 0.8em;
   right: 4.5em;
 }
-.head .fa-glass-cheers{
-  color: rgb(255, 189, 238);
-  left: 1.2em;
+.head .icon_menu,#menu .icon_menu_1, #menu .icon_menu_2 {
+  position: absolute;
+  top: 0.6em;
+  height: 4em;
+}
+.head .icon_menu{
+  left: 5em;
 }
 #menu{
   right: 0.5em;
 }
-#menu .fa-times, #menu .fa-bars{
+#menu .icon_menu_1,#menu .icon_menu_2{
   display: block;
   position:absolute;
-  right: 0;
+  right: 0.5em;
 }/*
 #menu:hover, .show:hover{
   background-color: burlywood;
@@ -123,16 +123,16 @@ h1{
   background-color: cadetblue;
   width: 100%;
   height: 20em;
-  z-index: 4;
+  z-index: 100;
   position: fixed;
   top: 6em;
   right: 0;
 }
 /**/
-#menu.show .fa-times, #detail.show{
+#menu.show .icon_menu_2, #detail.show{
   opacity: 1;
 }
-#menu.show .fa-bars, #detail, #menu .fa-times{
+#menu.show .icon_menu_1, #detail, #menu .icon_menu_2{
   opacity: 0;
 }
 
