@@ -346,7 +346,7 @@ body, .button:after {
   background: #fff;
   border-radius: 5px;
   width: 30%;
-  top: 30%;
+  top: 10%;
   position: relative;
   transition: all 5s ease-in-out;  
 }
