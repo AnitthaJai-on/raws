@@ -183,10 +183,106 @@
       height: 10%;
       text-align: center;
     }
+    .icon{
+  animation: icon_ani 1.3s;
+  height:10%; 
+  width: 5%;
+      z-index: -10;
+      display: block;
+      position: relative;
+     margin-left: auto;
+     margin-right: auto;
+     top: 50%;
+}
+
+    .ice1{
+  background-image: linear-gradient(#FF3399, #FF7F50);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -10;
+  animation: op 1.3s;
+}
+
+@keyframes icon_ani {
+  0% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    z-index: 100;
+  }
+  25% {
+    -webkit-transform: scale(1.2, 1.2);
+    transform: scale(1.2, 1.2);
+    opacity: 1;
+    z-index: 100;
+    }
+  50% {
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+  opacity: 0;
+  z-index: -10;
+  }
+}
+
+@keyframes op {
+  0% {
+    opacity: 1;
+    z-index: 100;
+  }
+  25% {
+    opacity: 1;
+    z-index: 100;
+    }
+  50% {
+    opacity: 1;
+    z-index: 100;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+@keyframes op2 {
+  0% {
+    opacity: 1;
+    z-index: 80;
+  }
+  25% {
+    opacity: 1;
+    z-index: 80;
+  }
+  50% {
+    opacity: 1;
+    z-index: 80;
+  }
+  100% {
+    opacity: 0;
+    z-index: -10;
+  }
+}
+
+.ice2{
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -9;
+  animation: op2 1.3s ease-in-out;
+}
   </style>
 </head>
 
 <body>
+  <div class="ice1">
+    <img class="icon" src="img/fire_icon.png" /> </div>
+  <div class="ice2"> </div>
+  <div class="ice"> </div>
   <div style="background: #fff; width: 20%; height: 100%; float: left; z-index: 2; position: absolute; top: 10% ;"></div>
     <table class="body_menu" style="background-image: linear-gradient(to right, #FF3399, #FF7F50);">
       <tr class="rone" >
