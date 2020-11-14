@@ -7,7 +7,7 @@ body{
 h1{
       color: rgb(243, 235, 237);
       font-size: 45px;
-      text-shadow: 4px 6px 1px #601900;    
+       
       transition:2s;
       font-family: 'kanit';
 
@@ -82,7 +82,7 @@ h1{
 }
 .head h1{
   font-size:50px;
-  left: 2.8em;
+  left: 2.5em;
   margin: 0.3em;
 }
 .head .icon_menu,#menu .icon_menu_1, #menu .icon_menu_2 ,.icon_menu2{
@@ -91,7 +91,7 @@ h1{
   height: 4em;
 }
 .head .icon_menu, .icon_menu2{
-  left: 5em;
+  left: 4.5em;
 }
 #menu{
   right: 0.5em;
@@ -139,7 +139,7 @@ h1{
 
 
 body, .button:after {
-  background: #491C00;
+ 
 }
 
 .b-red, .b-red:before {

@@ -27,6 +27,40 @@
     .bb :hover {
       background-image: linear-gradient(to right, #FF7F50, #FF3399);
     }
+
+
+    .bb2{
+      border: none;
+      padding: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      background-image: linear-gradient(to right, #FFF, #FFF);
+      border-radius: 30px;
+      width: 150px;
+      height: 5%;
+      cursor: pointer;
+    }
+
+    .bb2 :hover {
+      background-image: linear-gradient(to right, #FF7F50, #FF3399);
+    }
+    .tx{
+      width: 150px;
+      height: 5%;
+      border-image-source: linear-gradient(#FF3399, #FF7F50);
+      background: -webkit-linear-gradient(#FF3399, #FF7F50);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .tx:hover{
+      border-image-source: linear-gradient(#fff, #fff);
+      background: -webkit-linear-gradient(#fff, #fff);
+     -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
   </style>
 
 </head>
@@ -38,6 +72,7 @@
   <div class="ice"> </div>
   <div class="head">
     <img class="icon_menu" src="img/fire_icon.png" />
+
     <div id="top"><img class="icon_menu2" src="img/fire_icon2.png" /></div>
     <h1>Dinner</h1>
 
@@ -54,7 +89,8 @@
         color: #fff;
         font-size: 20px;
         height: auto;
-         " class="bb">Login</a></button>
+        
+         " class="bb2"><b class="tx"> Login </b></a></button>
 
 
     <div id="menu" onclick="show()">
