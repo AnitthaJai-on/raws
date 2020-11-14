@@ -67,7 +67,7 @@
   <div id="detail">
     <div class="in_detail"><h1>ข้อมูลต่างๆ ใส่ตรงนี้</h1></div>
   </div>
-  <h1 style="z-index: 10;
+  <h1 style="z-index: 1;
         text-align: center;
         display: block;
        position: relative;
@@ -121,11 +121,11 @@
             <input type="tel" name="Loginnum" id="Loginnum" required />
 
             <br>
-            <h5 style="color: black;">เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ
+            <h5 style="color: #BEBEBE;">เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ
               อาจมีค่าบริการส่งข้อความและข้อมูล
               ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
           </form>
-          <a class="button2" href="#Login2">ต่อไป</a>
+          <a class="button2" href="#Login2" style="border-radius: 30px;">ต่อไป</a>
         </div>
       </div>
     </div>
@@ -141,7 +141,7 @@
         <div class="content">
 
           <input type="email" name="email" id="email" placeholder="กรอกอีเมล์" required /> <br>
-          <a class="button2" href="#">Login</a>
+          <a class="button2" href="2.html" style="border-radius: 30px;">Login</a>
         </div>
       </div>
     </div>
@@ -158,7 +158,7 @@
 
           <form role="form" id="myForm">
 
-            <select name="prefix" id="prefix" class="form-control" style="float:left">
+            <select name="prefix" id="prefix" class="form-control" style="background-color: aliceblue; float:left; height: 5%; border: none;">
               <option value="0">66+</option>
               <option value="1">+1</option>
               <option value="2">+82</option>
@@ -166,19 +166,19 @@
               <option value="4">+45</option>
               <option value="5">+90</option>
             </select>
-            <input type="tel" name="num" id="num" required />
+            <input type="tel" name="num" id="num" style="width:45%; height: 5%;  background-color: aliceblue; border: none; " required />
 
             <br>
-            <h5 style="color: black;">เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ
+            <h5 style="color: #BEBEBE;">เมื่อคุณแตะ "ต่อไป" Tinder จะส่งข้อความพร้อมรหัสยืนยันให้กับคุณ
               อาจมีค่าบริการส่งข้อความและข้อมูล
               ใช้หมายเลขโทรศัพท์ที่ได้รับการยืนยันแล้วเพื่อเข้าสู่ระบบ</h5>
           </form>
-          <a class="button2" href="#popup2">ต่อไป</a>
+          <a class="button2" href="#popup2" style="border-radius: 30px;">ต่อไป</a>
         </div>
       </div>
     </div>
 
-    <!-- ใส่ pin จ้าาา -->
+    <!-- ใส่ pin จ้าาา
     <div id="popup2" class="overlay">
       <div class="popup">
         <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
@@ -196,7 +196,8 @@
                     text-align:center;
                     margin:0 5px;
                     background:#FF7F50;
-                    font-size:20px;">
+                    font-size:20px;
+                    background-color: aliceblue; border: none;">
             <input type="text" data-role="pin" maxlength="1" class="pin-input" style="width: 44px;
                     height: 44px;
                     border: 1px solid #FF3399;
@@ -243,27 +244,27 @@
 
         </div>
       </div>
-    </div>
+    </div> -->
 
 
     <!-- ใส่ email จ้าาาา -->
-    <div id="popup3" class="overlay">
+    <div id="popup2" class="overlay">
       <div class="popup">
         <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>อีเมล์ของคุณคือ?</h2>
 
         <a class="close" href="#">&times;</a>
         <div class="content">
-          <input type="email" name="email" id="email" placeholder="กรอกอีเมล์" required /> <br><br>
+          <input type="email" name="email" id="email" placeholder="กรอกอีเมล์" style="width:70%; height: 5%;  background-color: aliceblue; border: none;" required /> <br><br>
 
-          <a class="button2" href="#popup4">ต่อไป</a>
+          <a class="button2" href="#popup3" style="border-radius: 30px;">ต่อไป</a>
         </div>
       </div>
     </div>
 
 
     <!-- เงื่อนไขจ้าาาา -->
-    <div id="popup4" class="overlay">
+    <div id="popup3" class="overlay">
       <div class="popup">
         <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ขอต้อนรับสู่ Dinner บลาๆ</h2>
@@ -271,45 +272,47 @@
         <div class="content">
           <h3 style="color: black;">เงื่อนไขบลาๆๆๆๆๆๆ</h3>
 
-          <a class="button2" href="#popup5">รับทราบ</a>
+          <a class="button2" href="#popup4" style="border-radius: 30px;">รับทราบ</a>
         </div>
       </div>
     </div>
 
     <!-- ชื่อจ้าาาาาาาา -->
-    <div id="popup5" class="overlay">
+    <div id="popup4" class="overlay">
       <div class="popup">
         <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ชื่อของฉันคือ</h2>
         <a class="close" href="#">&times;</a>
         <div class="content">
-          <input type="text" name="name" id="name" placeholder="ชื่อจริง" required />
-          <h5 style="color: black;">นี้คือสิ่งที่จะปรากฎบน Dinner</h5>
 
-          <a class="button2" href="#popup6">ต่อไป</a>
+          <input type="text" name="name" id="name" placeholder="ชื่อจริง" style=" background-color: aliceblue; border: none; width:70%; height: 5%; " required />
+
+          <h5 style="color: #BEBEBE;">นี้คือสิ่งที่จะปรากฎบน Dinner</h5>
+
+          <a class="button2" href="#popup5" style="border-radius: 30px;">ต่อไป</a>
         </div>
       </div>
     </div>
 
     <!-- ใส่วันเกิด วันเกิดจ้า-->
-    <div id="popup6" class="overlay">
+    <div id="popup5" class="overlay">
       <div class="popup">
         <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>วันเกิดของฉันคือ</h2>
         <a class="close" href="#">&times;</a>
         <div class="content">
-          <input type="date" id="dob" placeholder="1972-11-12" />
-          <h5 style="color: black;">ผู้ใช้คนอื่นสามารถมองเห็นอายุคุณได้</h5>
+          <input type="date" id="dob" style=" background-color: aliceblue; border: none; width:70%; height: 5%; color: grey;" placeholder="1972-11-12" />
+          <h5 style="color: #BEBEBE;">ผู้ใช้คนอื่นสามารถมองเห็นอายุคุณได้</h5>
 
-          <a class="button2" href="#popup7">ต่อไป</a>
+          <a class="button2" href="#popup6" style="border-radius: 30px;">ต่อไป</a>
         </div>
       </div>
     </div>
 
 
     <!-- ใส่เพศจ้า -->
-    <div id="popup7" class="overlay">
-      <div class="popup">
+    <div id="popup6" class="overlay" >
+      <div class="popup" >
         <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>ฉันเป็น</h2>
         <a class="close" href="#">&times;</a>
@@ -317,25 +320,27 @@
           <canter>
             <div class="input-group">
               <input type="radio" name="gender" value="male" id="gender-male" />
-              <label for="gender-male" style="color: black;">Male</label>
+              <label for="gender-male" style="color: black; ">Male </h3></label>
+              <br>
+              <br>
               <input type="radio" name="gender" value="female" id="gender-female" />
-              <label for="gender-female" style="color: black;">Female</label>
+              <label for="gender-female" style="color: black; ">Female</label>
             </div>
           </canter>
-          <a class="button2" href="#popup8">ต่อไป</a>
+          <a class="button2" href="#popup7" style="border-radius: 30px;">ต่อไป</a>
         </div>
       </div>
     </div>
 
     <!-- ใส่สถานศึกษา แม่งเอาไปทำไรวะ -->
-    <div id="popup8" class="overlay">
+    <div id="popup7" class="overlay">
       <div class="popup">
         <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2>สถานศึกษาของฉัน</h2>
         <a class="close" href="#">&times;</a>
         <div class="content">
-          <input type="text" name="school" id="school" placeholder="ชื่อสถานศึกษา" required /> <br>
-          <a class="button2" href="#popup9">ต่อไป</a>
+          <input type="text" name="school" id="school" placeholder="ชื่อสถานศึกษา" style="background-color: aliceblue; border: none;" required /> <br>
+          <a class="button2" href="#popup8" style="border-radius: 30px;">ต่อไป</a>
         </div>
       </div>
     </div>
@@ -343,14 +348,14 @@
 
 
     <!-- ใส่รูป -->
-    <div id="popup9" class="overlay">
+    <div id="popup8" class="overlay">
       <div class="popup">
         <img class="icon2" src="img/fire_icon2.png" style="height:5%; width: 10%;" /><br>
         <h2 style="color: black;">เข้าถึงรูป ฝากแบคทำ</h2>
         <a class="close" href="#">&times;</a>
         <div class="content">
 
-          <a class="button2" href="#popup10">ต่อไป</a>
+          <a class="button2" href="#popup9" style="border-radius: 30px;">ต่อไป</a>
         </div>
       </div>
     </div>
